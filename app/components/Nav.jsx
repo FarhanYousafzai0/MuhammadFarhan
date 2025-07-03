@@ -5,6 +5,7 @@ import Link from "next/link";
 import { gsap } from "gsap";
 import { X } from "lucide-react";
 import { useGSAP } from "@gsap/react";
+import { navItems } from "../data";
 
 const Nav = () => {
  
@@ -41,21 +42,15 @@ const tl = gsap.timeline();
 {/* Close Menu */}
 
 
-<div className="flex items-center justify-between px-[40px] py-[10] ">
-
-{/* logo */}
 
 
-<span className="text-yellow-100">Muhammad Farhan</span>
 
-
-<div onClick={()=>setIsOpen(false)} className="  bg-yellow-100 cursor-pointer w-[50px] h-[50px] rounded-full flex items-center justify-center">
+<div onClick={()=>setIsOpen(false)} className="  bg-yellow-100 absolute top-[15px] right-[15px] cursor-pointer w-[50px] h-[50px] rounded-full flex items-center justify-center">
           <X className="text-orange-700" />
         </div>
 
 
 
-</div>
 
 
 
@@ -63,13 +58,18 @@ const tl = gsap.timeline();
        {/*  */}
 
 
-<div className="flex flex-col  mt-[5rem] px-[40px] py-[10]" >
-<span className="text-yellow-100 text-[10vw] uppercase tracking-[1px]">About</span>
-<span className="text-yellow-100 text-[10vw] uppercase tracking-[1px]">About</span>
+<div className="flex flex-col md:items-end items-start  px-5 mt-[4rem] " >
+
+{navItems.map((item,index)=>(
+
+<span className="text-yellow-100 md:text-[7vw] text-[11vw] uppercase font-heading -tracking-[1px] ">{item?.name}</span>
+))}
 
 </div>
 
 
+
+<div className="flex items-center justify-between"></div>
 
       </div>
 

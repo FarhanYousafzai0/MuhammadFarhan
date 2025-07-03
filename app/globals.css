@@ -2,19 +2,15 @@
 
 /* Light theme colors */
 :root {
- 
-
-
-  /* Only one font now */
-  --font-sans: var(--font-inter-tight);
+  --font-sans: var(--font-inter-tight);     /* Body font */
+  --font-heading: var(--font-unbounded);    /* Heading font */
 }
 
-/* Dark mode */
-
-
 body {
- 
-  color: var(--foreground);
   font-family: var(--font-sans), Arial, sans-serif;
-  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), serif;
 }
