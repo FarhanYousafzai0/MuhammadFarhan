@@ -2,15 +2,16 @@
 
 /* Light theme colors */
 :root {
-  --font-sans: var(--font-inter-tight);     /* Body font */
-  --font-heading: var(--font-unbounded);    /* Heading font */
+  --font-body: var(--font-clash-display);
 }
 
+/* Apply to Entire Site */
 body {
-  font-family: var(--font-sans), Arial, sans-serif;
+  font-family: var(--font-body), Arial, sans-serif;
   overflow-x: hidden;
 }
 
+/* Optional: Override heading tags for extra control */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading), serif;
+  font-family: var(--font-body), serif;
 }

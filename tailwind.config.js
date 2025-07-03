@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter-tight)', 'sans-serif'], // ✅ Use this everywhere
+        body: ['var(--font-body)'],
       },
     },
   },
