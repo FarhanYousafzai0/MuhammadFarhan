@@ -1,5 +1,7 @@
 import { Inter_Tight } from "next/font/google";
 import "./globals.css";
+import Nav from "./components/Nav";
+
 
 
 const interTight = Inter_Tight({
@@ -17,8 +19,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={interTight.variable}>
-      <body className="antialiased">
-     
+      <body className="antialiased bg-yellow-100 overflow-x-hidden" >
+     <Nav/>
+    
+
+
         {children}
       </body>
     </html>

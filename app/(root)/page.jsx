@@ -1,11 +1,13 @@
+"use client"
+
 import React from 'react'
-import Nav from '../components/Nav'
-import { navItems } from '../data'
+
 
 const page = () => {
   return (
     <>
 
+  
 
 
 
