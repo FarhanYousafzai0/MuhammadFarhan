@@ -100,7 +100,7 @@ const Nav = () => {
       </div>
 
       {/* Top Navbar */}
-      <div className="flex items-center fixed top-5 left-0 w-full  justify-between px-4 py-2">
+      <div className="flex items-center fixed top-5 left-0 w-full z-50  justify-between px-4 py-2">
         {/* Language Toggle */}
         <div
           className="flex items-center bg-[#FF6620] px-4 py-2 rounded-md hover:bg-black gap-2 cursor-pointer transition-colors duration-300"

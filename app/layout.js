@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={interTight.variable}>
-      <body className="antialiased overflow-x-hidden" >
+      <body className="antialiased overflow-x-hidden bg-[#B3B3B3]" >
      <Nav/>
     
 
