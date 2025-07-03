@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { gsap } from "gsap";
-import { X } from "lucide-react";
+import { ArrowUpRight, X } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import { navItems } from "../data";
 
@@ -69,7 +69,19 @@ const tl = gsap.timeline();
 
 
 
-<div className="flex items-center justify-between"></div>
+<div className="flex md:flex-row flex-col md:items-center px-5 justify-between mt-10">
+
+<span className="text-[6vw] text-white text uppercase tracking-tight">Let's br Create</span>
+<div className="flex items-center gap-3">
+
+<p className="text-[3vw] uppercase text-yellow-100 flex items-center gap-2 ">GITHUB <ArrowUpRight size={50}/></p>
+<p className="text-[3vw] uppercase text-yellow-100 flex items-center gap-2 ">Linkedin <ArrowUpRight size={50}/></p>
+
+</div>
+  
+</div>
+
+
 
       </div>
 
