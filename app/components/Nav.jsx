@@ -102,14 +102,18 @@ const Nav = () => {
       {/* Top Navbar */}
       <div className="flex items-center fixed top-5 left-0 w-full z-50  justify-between px-4 py-2">
         {/* Language Toggle */}
-        <div
-          className="flex items-center bg-[#FF6620] px-4 py-2 rounded-md hover:bg-black gap-2 cursor-pointer transition-colors duration-300"
-          onClick={toggleLanguage}
-        >
-          <Globe ref={globeRef} className="text-white" />
-          <p className="text-white font-medium">{lang.toUpperCase()}</p>
-        </div>
 
+<div className="flex items-center gap-3">
+
+<span className="text-white ">©Code By Farhan</span>
+
+
+
+
+</div>
+
+
+        
         {/* Menu Button */}
        <Magnetic> <span
           onClick={() => setIsOpen(!isOpen)}

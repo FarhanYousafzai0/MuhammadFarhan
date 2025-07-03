@@ -4,6 +4,7 @@ import React from "react";
 import Iridescence from "./ui/Backgrounds/Iridescence/Iridescence";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import ScrollVelocity from "./ui/TextAnimations/ScrollVelocity/ScrollVelocity";
 
 export const Hero = () => {
   return (
@@ -29,7 +30,7 @@ export const Hero = () => {
       </div>
 
 
-      <div className="flex items-center w-full md:justify-between p-4">
+      {/* <div className="flex items-center w-full md:justify-between p-4">
 
         <span className="text-black hidden uppercase md:block font-light text-xs">@2025BuilbyMuhammadFarhan</span>
      
@@ -40,7 +41,13 @@ export const Hero = () => {
         
     <Link href={`https://www.linkedin.com/in/farhan-yousafzai-8a1363352/`}> <span className="text-black uppercase flex items-center gap-1 tracking-[2px]">Linkedin <ArrowUpRight/></span></Link>
      </div>
-      </div>
+      </div> */}
+
+<ScrollVelocity
+  texts={['Muhammad -Farhan']} 
+  velocity={100} 
+  className="text-white font-light text-[10vw]"
+/>
     </div> 
   );
 };
