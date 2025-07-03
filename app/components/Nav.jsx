@@ -9,10 +9,10 @@ import { navItems } from "../data";
 
 const Nav = () => {
  
-
-  const [isOpen, setIsOpen] = useState(false);
+const [isOpen, setIsOpen] = useState(false);
 
 const ContainerRef = useRef(null);
+
 
 
 useGSAP(()=>{
@@ -22,13 +22,18 @@ const tl = gsap.timeline();
     duration: 0.5,
     ease: "power2.inOut",
   })
+  .fromTo('links',{
+    y:100
+  },
+{y:0,duration:0.05,ease:"bounce"})
 
   
 
 
 
-
 },[isOpen])
+
+
 
 
 
@@ -58,24 +63,28 @@ const tl = gsap.timeline();
        {/*  */}
 
 
-<div className="flex flex-col md:items-end items-start  px-5 mt-[4rem] " >
+<div className="flex flex-col  md:items-start  px-5  " >
 
 {navItems.map((item,index)=>(
 
-<span className="text-yellow-100 md:text-[7vw] text-[11vw] uppercase font-heading -tracking-[1px] ">{item?.name}</span>
+<Link onClick={()=>setIsOpen(!isOpen)} href={item?.link}><span key={index} className="text-yellow-100 links md:text-[7vw] text-[11vw] uppercase hover:text-white   cursor-pointer duration-500 transition-all  font-heading -leading-[1px] -tracking-[1px] ">{item?.name}</span>
+</Link>
+
 ))}
 
 </div>
 
 
 
-<div className="flex md:flex-row flex-col md:items-center px-5 justify-between mt-10">
+<div className="flex md:flex-row md:gap-0 gap-5 flex-col md:items-center px-5 justify-between mt-10">
 
-<span className="text-[6vw] text-white text uppercase tracking-tight">Let's br Create</span>
-<div className="flex items-center gap-3">
+<span className="text-[8vw] md:text-6xl text-[
+#999999]  uppercase flex items-center ">Let's Create<ArrowUpRight size={70}/></span>
+<hr className="text-white" />
+<div className="flex items-center gap-3 ">
 
-<p className="text-[3vw] uppercase text-yellow-100 flex items-center gap-2 ">GITHUB <ArrowUpRight size={50}/></p>
-<p className="text-[3vw] uppercase text-yellow-100 flex items-center gap-2 ">Linkedin <ArrowUpRight size={50}/></p>
+<Link href={``}><p className="text-[7vw] md:text-2xl uppercase font-light text-yellow-100 flex items-center gap-2 ">GITHUB <ArrowUpRight size={40}/></p></Link>
+<Link href={``}><p className="text-[7vw] uppercase md:text-2xl text-yellow-100 flex items-center gap-2 ">Linkedin <ArrowUpRight size={40}/></p></Link>
 
 </div>
   
@@ -88,13 +97,16 @@ const tl = gsap.timeline();
 
 
 {/* Nagation-bar */}
-<div className="flex items-center justify-between p-2 ">
+<div className="flex items-center fixed top-0 left-0 justify-between p-2 ">
 
-<span className="border-2 border-black p-3 px-7 border-r-0 border-b-0
-   flex items-center justify-center">
-Muhammad Farhan
+
+<span
+  onClick={() => setIsOpen(!isOpen)}
+  className="hover:bg-orange-700 bg-black cursor-pointer text-white uppercase tracking-wide transition-all duration-300 ease-in-out px-8 py-3 rounded-full flex items-center justify-center"
+>
+  Menu
 </span>
-<span onClick={()=>setIsOpen(!isOpen)}  className="bg-orange-700 cursor-pointer text-yellow-100 transition-all duration-300 ease-in-out px-7 py-3 rounded-full flex items-center justify-center">Menu</span>
+
 
 
 </div>
