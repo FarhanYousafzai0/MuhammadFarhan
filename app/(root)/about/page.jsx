@@ -2,6 +2,7 @@
 
 import Nav2 from "@/app/components/Nav2";
 import SpotlightCard from "@/app/components/ui/Components/SpotlightCard/SpotlightCard";
+import CircularText from "@/app/components/ui/TextAnimations/CircularText/CircularText";
 import { Experience } from "@/app/data";
 
 import Image from "next/image";
@@ -58,8 +59,44 @@ export const Page = () => {
           {/*  */}
 
 
-          <div className="h-auto w-full bg-black"></div>
+          
         </div>
+        <div className=" p-4 gap-4   w-full flex md:flex-row flex-col-reverse mt-15">
+
+<div className="w-full h-full md:p-5  flex justify-center">
+
+  <div className="h-[80%] w-[85%] bg-black rounded-md flex items-start ">
+    <img src="/cert.jpeg" alt=""  className="rounded-md object-cover"/>
+  </div>
+</div>
+
+<div className="w-full h-full md:p-5  flex justify-center">
+
+  
+<div className="h-[80%] w-[90%] flex   items-start relative">
+
+<div>
+<CircularText
+  text="WEB*DEVELOPER*PNY*"
+  onHover="speedUp"
+  spinDuration={20}
+  className="custom-class text-black"
+/>
+
+<div className="flex flex-col px-4">
+
+<span className="mt-4 md:text-4xl text-3xl text-black ">Full Stack Web- <br /> Developer 2024 </span>
+<p className="text-black text-sm font-extralight max-w-sm mt-4  leading-5">I’m a certified Full Stack Developer from PNY Training Institute, where I completed my training in 2024. I’ve mastered both frontend and backend technologies, and I’m proud to be one of the top-performing students from my batch.</p>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+          </div>
       </div>
     </>
   );
