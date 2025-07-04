@@ -53,9 +53,9 @@ const Nav = () => {
 
   return (
     <>
-      <div className="flex items-center w-full z-50 justify-between px-6 md:px-12 py-10">
+      <div className="flex items-center bg-[#B3B3B3] w-full z-50 justify-between px-6 md:px-12 py-10">
         <div className="flex items-center gap-3">
-          <span className="text-white">©Code By Farhan</span>
+       <Link href={`/`}>   <span className="text-white cursor-pointer">©Code By Farhan</span></Link>
         </div>
 
         <ul className="flex items-center gap-8">

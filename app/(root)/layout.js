@@ -1,6 +1,7 @@
 "use client"
 import Lenis from 'lenis';
 import React, { useEffect } from 'react'
+import { Footer } from '../components/Footer';
 
 
 const layout = ({children}) => {
@@ -28,6 +29,8 @@ const layout = ({children}) => {
     <>
 
       {children}
+
+      <Footer/>
     </>
   )
 }
