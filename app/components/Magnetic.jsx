@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { gsap } from 'gsap';
 
-const Magnetic = ({ children, strength = 0.5 }) => {
+const Magnetic = ({ children, strength = 0.3 }) => {
   const magneticRef = useRef(null);
   
   const handleMouseMove = (e) => {

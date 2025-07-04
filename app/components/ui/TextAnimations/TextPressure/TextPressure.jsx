@@ -1,13 +1,8 @@
-/*
-	Installed from https://reactbits.dev/tailwind/
-*/
-
 import { useEffect, useRef, useState } from 'react';
 
 const TextPressure = ({
   text = 'Compressa',
   fontFamily = 'Compressa VF',
-  // This font is just an example, you should not use it in commercial projects.
   fontUrl = 'https://res.cloudinary.com/dr6lvwubh/raw/upload/v1529908256/CompressaPRO-GX.woff2',
 
   width = true,
@@ -25,7 +20,6 @@ const TextPressure = ({
   className = '',
 
   minFontSize = 24,
-
 }) => {
   const containerRef = useRef(null);
   const titleRef = useRef(null);
@@ -102,7 +96,6 @@ const TextPressure = ({
     setSize();
     window.addEventListener('resize', setSize);
     return () => window.removeEventListener('resize', setSize);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [scale, text]);
 
   useEffect(() => {
@@ -132,7 +125,7 @@ const TextPressure = ({
           };
 
           const wdth = width ? Math.floor(getAttr(d, 5, 200)) : 100;
-          const wght = weight ? Math.floor(getAttr(d, 100, 900)) : 400;
+          const wght = weight ? Math.floor(getAttr(d, 400, 900)) : 400; // Increased minimum font weight to 400
           const italVal = italic ? getAttr(d, 0, 1).toFixed(2) : 0;
           const alphaVal = alpha ? getAttr(d, 0, 1).toFixed(2) : 1;
 
@@ -151,7 +144,7 @@ const TextPressure = ({
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-full overflow-hidden bg-transparent"
+      className="relative w-full md:h-full overflow-hidden bg-transparent"
     >
       <style>{`
         @font-face {
@@ -181,7 +174,7 @@ const TextPressure = ({
           } ${stroke ? 'stroke' : ''} uppercase text-center`}
         style={{
           fontFamily,
-          fontSize: fontSize,
+          fontSize,
           lineHeight,
           transform: `scale(1, ${scaleY})`,
           transformOrigin: 'center top',
