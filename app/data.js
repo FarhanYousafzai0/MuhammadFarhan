@@ -2,8 +2,8 @@ export const navItems = [
 
     {
         id:1,
-        name:'Home',
-        link:'/',
+        name:'Work',
+        link:'/work',
 
     },
      {
@@ -14,8 +14,8 @@ export const navItems = [
     },
      {
         id:3,
-        name:'Work',
-        link:'/work',
+        name:'Contact',
+        link:'/contact',
 
     },
      
