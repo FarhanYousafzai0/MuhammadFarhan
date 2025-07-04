@@ -90,42 +90,41 @@ export const Footer = () => {
 
 
 
-<div className='flex items-center justify-between h-[100px] '>
-
-
-<div className='flex items-center gap-4 '>
-
-<div className='flex flex-col gap-2'>
-<span className='text-neutral-500 text-xs uppercase font-lighter'>Local Time</span>
-<p className="text-white text-xs uppercase">{time}</p>
-
-</div>
-<div className='flex flex-col gap-2'>
-<span className='text-neutral-500 text-xs uppercase font-lighter'>Day & Data</span>
-<p className="text-white text-xs uppercase">{date}</p>
-
-</div>
-</div>
-
-
-
-    <div className='flex flex-col gap-1'>
-
-        <span className='text-neutral-500 text-xs uppercase font-lighter'>Soicals</span>
-
-        <div className="flex items-center gap-6 mt-3">
-<Link href={`https://x.com/Farhankhana804`}> <p className="text-white text-xs uppercase">Twitter</p></Link>
-<Link href={``}> <p className="text-white text-xs uppercase">Linkedin</p></Link>
-<Link href={`https://github.com/FarhanYousafzai0`}> <p className="text-white text-xs uppercase">Github</p></Link>
-<Link href={`https://www.linkedin.com/in/farhan-yousafzai-8a1363352/`}> <p className="text-white text-xs uppercase">+92 3197421574</p></Link>
-
-
-</div>
+<div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-0 py-6 md:py-0">
+  {/* Time & Date */}
+  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+    <div className="flex flex-col gap-2">
+      <span className="text-neutral-500 text-xs uppercase font-light">Local Time</span>
+      <p className="text-white text-xs uppercase">{time}</p>
     </div>
 
+    <div className="flex flex-col gap-2">
+      <span className="text-neutral-500 text-xs uppercase font-light">Day & Date</span>
+      <p className="text-white text-xs uppercase">{date}</p>
+    </div>
+  </div>
 
+  {/* Socials */}
+  <div className="flex flex-col gap-1">
+    <span className="text-neutral-500 text-xs uppercase font-light">Socials</span>
 
+    <div className="flex flex-wrap items-center gap-4 mt-3">
+      <Link href="https://x.com/Farhankhana804">
+        <p className="text-white text-xs uppercase hover:underline">Twitter</p>
+      </Link>
+      <Link href="#">
+        <p className="text-white text-xs uppercase hover:underline">LinkedIn</p>
+      </Link>
+      <Link href="https://github.com/FarhanYousafzai0">
+        <p className="text-white text-xs uppercase hover:underline">GitHub</p>
+      </Link>
+      <Link href="https://www.linkedin.com/in/farhan-yousafzai-8a1363352/">
+        <p className="text-white text-xs uppercase hover:underline">+92 3197421574</p>
+      </Link>
+    </div>
+  </div>
 </div>
+
 
 </div>
 

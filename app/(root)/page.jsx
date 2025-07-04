@@ -16,7 +16,7 @@ const page = () => {
 <Nav/>
   <Hero/>
 <Services/>
-<Footer/>
+
 
     
     </>
