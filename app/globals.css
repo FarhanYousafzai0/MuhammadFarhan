@@ -12,6 +12,11 @@ body {
   position: relative;
 }
 
+
+body::-webkit-scrollbar{
+  display: none !important;
+}
+
 /* Optional: Override heading tags for extra control */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-body), serif;

@@ -105,9 +105,9 @@ export const ScrollVelocity = ({
     }
 
     return (
-      <div className="w-full py-8 relative">
+      <div className="w-full py-10  h-[200px] md:h-[400px] relative">
         <motion.div
-          className="flex whitespace-nowrap text-center text-4xl font-bold tracking-[-0.02em] drop-shadow md:text-[5rem] md:leading-[5rem]"
+          className="flex whitespace-nowrap   font-bold tracking-[-0.02em] drop-shadow md:text-[5rem] md:leading-[5rem]"
           style={{ x }}
         >
           {spans}

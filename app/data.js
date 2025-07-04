@@ -18,12 +18,7 @@ export const navItems = [
         link:'/work',
 
     },
-     {
-        id:4,
-        name:"Let's Talk",
-        link:'/contact',
-
-    },
+     
     
 
 ]
