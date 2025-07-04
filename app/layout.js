@@ -14,6 +14,9 @@ const interTight = Inter_Tight({
 export const metadata = {
   title: "Muhammad Farhan",
   description: "Let's Build Something.",
+  icons: {
+    icon: "/33.jpeg",
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -121,10 +121,10 @@ const Nav = () => {
 
 
 <div className="flex items-center gap-6 mt-3">
-<Link href={`https://x.com/Farhankhana804`}> <p className="text-white text-sm">Twitter</p></Link>
-<Link href={``}> <p className="text-white text-sm">Linkedin</p></Link>
-<Link href={`https://github.com/FarhanYousafzai0`}> <p className="text-white text-sm">Github</p></Link>
-<Link href={`https://www.linkedin.com/in/farhan-yousafzai-8a1363352/`}> <p className="text-white text-sm">+92 3197421574</p></Link>
+<Link href={`https://x.com/Farhankhana804`}> <p className="text-white text-xs">Twitter</p></Link>
+<Link href={``}> <p className="text-white text-xs">Linkedin</p></Link>
+<Link href={`https://github.com/FarhanYousafzai0`}> <p className="text-white text-xs">Github</p></Link>
+<Link href={`https://www.linkedin.com/in/farhan-yousafzai-8a1363352/`}> <p className="text-white text-xs">+92 3197421574</p></Link>
 
 
 </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Magnetic from './Magnetic'
+import Link from 'next/link'
 
 const Services = () => {
   return (
@@ -21,7 +22,7 @@ Together, we redefine what’s possible — no fluff, just forward-thinking</spa
 
 
 
-  <Magnetic>  <div className="flex items-center justify-center cursor-pointer shadow-lg bg-[#FF6620] w-[150px] h-[150px] rounded-full text-white">About me</div></Magnetic>
+<Link href={`/about`}>  <Magnetic>  <div className="flex items-center justify-center cursor-pointer shadow-lg bg-[#FF6620] w-[150px] h-[150px] rounded-full text-white">About me</div></Magnetic></Link>
 </div>
 </div>
 

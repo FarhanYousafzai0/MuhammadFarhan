@@ -5,7 +5,7 @@ import SpotlightCard from "@/app/components/ui/Components/SpotlightCard/Spotligh
 import CircularText from "@/app/components/ui/TextAnimations/CircularText/CircularText";
 import { Experience } from "@/app/data";
 
-import Image from "next/image";
+
 import React from "react";
 
 export const Page = () => {
@@ -23,13 +23,18 @@ export const Page = () => {
 
           <div className="w-full flex md:flex-row flex-col gap-5">
             <div className="flex flex-col gap-3">
-              <p className="font-light text-black max-w-xs leading-6">
+              <p className="font-light text-black max-w-xs  leading-6">
                 I help clients from all over the world with tailor-made solutions. With each project, I push my work to new horizons, always putting quality first.
               </p>
               <span className="text-neutral-400">Always exploring</span>
             </div>
 
-            <div className="flex-1 bg-red-400 rounded">{/* Image placeholder */}</div>
+            <div className="flex-1 bg-red-400 rounded-md">
+
+<img src="/clients.png" alt=""  className="rounded-md" />
+
+
+            </div>
           </div>
 
           <div className="mt-20 h-auto">
@@ -61,12 +66,12 @@ export const Page = () => {
 
           
         </div>
-        <div className=" p-4 gap-4   w-full flex md:flex-row flex-col-reverse mt-15">
+        <div className=" p-4 gap-4 md:h-screen  h-auto  w-full flex md:flex-row flex-col-reverse mt-15">
 
 <div className="w-full h-full md:p-5  flex justify-center">
 
-  <div className="h-[80%] w-[85%] bg-black rounded-md flex items-start ">
-    <img src="/cert.jpeg" alt=""  className="rounded-md object-cover"/>
+  <div className="md:h-[100%] w-[85%]  rounded-md flex items-start overflow-hidden ">
+  <img src="/cert.jpeg" alt=""  className="rounded-md object-center "/>
   </div>
 </div>
 

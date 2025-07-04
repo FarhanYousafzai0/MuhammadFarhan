@@ -1,9 +1,46 @@
-import { Avatar } from '@mui/material'
-import React from 'react'
+"use client"
+
+
+import React, { useEffect, useState } from 'react'
 import TextPressure from './ui/TextAnimations/TextPressure/TextPressure'
 import Magnetic from './Magnetic'
+import Link from 'next/link'
 
 export const Footer = () => {
+    const [time, setTime] = useState("");
+  const [date, setDate] = useState("");
+
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+
+      const timeOptions = {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false, // set to true for AM/PM
+        timeZone: "Asia/Karachi",
+      };
+
+      const dateOptions = {
+        weekday: "short",
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+        timeZone: "Asia/Karachi",
+      };
+
+      const formattedTime = new Intl.DateTimeFormat("en-PK", timeOptions).format(now);
+      const formattedDate = new Intl.DateTimeFormat("en-PK", dateOptions).format(now);
+
+      setTime(formattedTime);
+      setDate(formattedDate);
+    };
+
+    updateTime();
+    const interval = setInterval(updateTime, 1000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <>
     
@@ -51,6 +88,44 @@ export const Footer = () => {
 </div>
 
 
+
+
+<div className='flex items-center justify-between h-[100px] '>
+
+
+<div className='flex items-center gap-4 '>
+
+<div className='flex flex-col gap-2'>
+<span className='text-neutral-500 text-xs uppercase font-lighter'>Local Time</span>
+<p className="text-white text-xs uppercase">{time}</p>
+
+</div>
+<div className='flex flex-col gap-2'>
+<span className='text-neutral-500 text-xs uppercase font-lighter'>Day & Data</span>
+<p className="text-white text-xs uppercase">{date}</p>
+
+</div>
+</div>
+
+
+
+    <div className='flex flex-col gap-1'>
+
+        <span className='text-neutral-500 text-xs uppercase font-lighter'>Soicals</span>
+
+        <div className="flex items-center gap-6 mt-3">
+<Link href={`https://x.com/Farhankhana804`}> <p className="text-white text-xs uppercase">Twitter</p></Link>
+<Link href={``}> <p className="text-white text-xs uppercase">Linkedin</p></Link>
+<Link href={`https://github.com/FarhanYousafzai0`}> <p className="text-white text-xs uppercase">Github</p></Link>
+<Link href={`https://www.linkedin.com/in/farhan-yousafzai-8a1363352/`}> <p className="text-white text-xs uppercase">+92 3197421574</p></Link>
+
+
+</div>
+    </div>
+
+
+
+</div>
 
 </div>
 

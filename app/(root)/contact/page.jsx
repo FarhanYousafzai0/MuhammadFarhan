@@ -2,12 +2,25 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='flex items-center justify-center w-screen h-screen bg-green-700 text-white'>
+
+    <>
+    
+    <div className='w-screen h-screen  text-white'>
+
+<div className='md:w-[70%] w-[90%] py-10 mx-auto h-full '>
 
 
-<p className='text-[4rem] text-white'>Contact<sup>5</sup></p>
+ <span className='md:text-6xl  text-black text-4xl  font-normal  '>
+ Let’s build something <br /> great together.
+ </span>
 
-    </div>
+
+ 
+</div>
+
+</div>
+    </>
+   
   )
 }
 
