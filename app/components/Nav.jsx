@@ -94,22 +94,24 @@ const Nav = () => {
       >
        
 
-<div className="flex flex-col gap-4 p-13 relative" >
+<ul className="flex flex-col items-end gap-4 p-13 relative" >
 <li className="text-white xl:block text-7xl hidden relative group">
                   Home
-                 
+                  <span className="block h-[2px] bg-white w-0 group-hover:w-full transition-all duration-500 ease-in-out origin-left mt-3"></span>
+
                 </li>
 {navItems.map((item, index) => (
                   
               <Link href={item?.link}>
-                <li className="text-white xl:block text-7xl hidden relative group">
-                  {item?.name}
-                 
-                </li>
+                <li className="text-white text-7xl relative group overflow-hidden">
+  {item?.name}
+  <span className="block h-[2px] bg-white w-0 group-hover:w-full transition-all duration-500 ease-in-out origin-left mt-3"></span>
+</li>
+
               </Link>
            
           ))}
-</div>
+</ul>
 
 
 
@@ -122,7 +124,7 @@ const Nav = () => {
 <Link href={`https://x.com/Farhankhana804`}> <p className="text-white text-sm">Twitter</p></Link>
 <Link href={``}> <p className="text-white text-sm">Linkedin</p></Link>
 <Link href={`https://github.com/FarhanYousafzai0`}> <p className="text-white text-sm">Github</p></Link>
-<Link href={``}> <p className="text-white text-sm">+92 3197421574</p></Link>
+<Link href={`https://www.linkedin.com/in/farhan-yousafzai-8a1363352/`}> <p className="text-white text-sm">+92 3197421574</p></Link>
 
 
 </div>
