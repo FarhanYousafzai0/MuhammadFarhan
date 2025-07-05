@@ -2,6 +2,7 @@
 import Magnetic from "@/app/components/Magnetic";
 import Link from "next/link";
 import React, { useState } from "react";
+import { SpinnerDotted } from "spinners-react";
 
 const page = () => {
   const [formData, setFormData] = useState({
@@ -185,7 +186,7 @@ const page = () => {
                     : 'bg-black hover:bg-gray-800'
                 }`}
               >
-                {isSubmitting ? "Sending..." : "Send it!"}
+                {isSubmitting ? (<SpinnerDotted size={50} thickness={100} speed={100} color="#ffffff" />) : "Send it!"}
               </button>
             </Magnetic>
           </form>
