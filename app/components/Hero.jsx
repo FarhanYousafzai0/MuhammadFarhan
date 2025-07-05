@@ -11,7 +11,7 @@ export const Hero = () => {
     <motion.div
       initial={{ opacity: 0, }}
       animate={{ opacity: 1,  }}
-      transition={{ duration: 1, ease: "easeInOut" }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
       className="w-screen h-[100vh] origin-top bg-[#B3B3B3] relative overflow-hidden"
     >
       <Nav />

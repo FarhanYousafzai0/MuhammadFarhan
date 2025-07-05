@@ -11,7 +11,14 @@ export default function Preloader({ onFinish }) {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    const phrases = ["Hello", "Bonjour", "Hallo", "Welkom", "Hola", "Olá"];
+    const phrases = [
+        "Hello",       // English
+        "ہیلو",         // Urdu
+        "你好",          // Chinese (Mandarin)
+        "Hallo",       // German
+        "Hola",        // Spanish
+        "नमस्ते",        // Hindi
+      ];
 
     const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
 
