@@ -7,6 +7,7 @@ import { Experience } from "@/app/data";
 
 
 import React from "react";
+import { SpinnerDotted } from "spinners-react";
 
 export const Page = () => {
   return (
@@ -26,12 +27,12 @@ export const Page = () => {
               <p className="font-light text-black max-w-xs  leading-6">
                 I help clients from all over the world with tailor-made solutions. With each project, I push my work to new horizons, always putting quality first.
               </p>
-              <span className="text-neutral-400">Always exploring</span>
+              <span className="text-neutral-400 flex items-center gap-3"><span>Always exploring</span>  <SpinnerDotted size={30} thickness={100} speed={100} color="#a1a1a1" />  </span>
             </div>
 
             <div className="flex-1 bg-red-400 rounded-md">
 
-<img src="/clients.png" alt=""  className="rounded-md" />
+<img src="/Work.png" alt=""  className="rounded-md" />
 
 
             </div>

@@ -1,5 +1,6 @@
 "use client";
 import Magnetic from "@/app/components/Magnetic";
+import Nav2 from "@/app/components/Nav2";
 import Link from "next/link";
 import React, { useState } from "react";
 import { SpinnerDotted } from "spinners-react";
@@ -58,6 +59,12 @@ const page = () => {
   };
 
   return (
+    <>
+    
+    
+    
+    <Nav2/>
+    
     <div className="w-screen min-h-screen bg-white text-black">
       {/* Top Heading */}
       <div className="md:w-[80%] w-[90%] py-10 mx-auto">
@@ -248,6 +255,9 @@ const page = () => {
         </div>
       </div>
     </div>
+    
+    </>
+    
   );
 };
 

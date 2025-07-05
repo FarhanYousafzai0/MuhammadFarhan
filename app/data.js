@@ -71,3 +71,30 @@ import {
     },
   ];
   
+
+
+  // components/Data.js
+
+export const projectsData = [
+    {
+      title: "Creative Landing Page",
+      category: "design",
+      description: "Figma to frontend, modern layout.",
+    },
+    {
+      title: "Full Stack E-Commerce",
+      category: "development",
+      description: "React + Node + MongoDB, complete site.",
+    },
+    {
+      title: "Portfolio UI Concept",
+      category: "design",
+      description: "High-fidelity Figma concept.",
+    },
+    {
+      title: "Chat App with Socket.IO",
+      category: "development",
+      description: "Real-time MERN chat application.",
+    },
+  ];
+  
