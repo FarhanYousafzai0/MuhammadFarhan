@@ -34,7 +34,7 @@ const Nav = () => {
     timelineRef.current = tl;
 
     tl.to(sidebarRef.current, {
-      width: "40%",
+      width: "60%",
       duration: 0.5,
       ease: "power3.inOut",
     });

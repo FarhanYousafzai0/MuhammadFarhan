@@ -13,7 +13,7 @@ const page = () => {
   return (
     <>
 
-<Nav/>
+
   <Hero/>
 <Services/>
 

@@ -1,14 +1,16 @@
-"use client"
+"use client";
+
 import Lenis from 'lenis';
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react';
 import { Footer } from '../components/Footer';
+import Preloader from '../components/PreLoader';
 
+const Layout = ({ children }) => {
+  const [showLoader, setShowLoader] = useState(true);
 
-const layout = ({children}) => {
-     useEffect(() => {
-    // Initialize Lenis
+  useEffect(() => {
     const lenis = new Lenis({
-      lerp: 0.1, 
+      lerp: 0.1,
       smoothWheel: true,
       infinite: false,
     });
@@ -20,19 +22,23 @@ const layout = ({children}) => {
 
     requestAnimationFrame(raf);
 
-    // Cleanup function
     return () => {
       lenis.destroy();
     };
   }, []);
+
   return (
     <>
-
-      {children}
-
-      <Footer/>
+      {showLoader ? (
+        <Preloader onFinish={() => setShowLoader(false)} />
+      ) : (
+        <>
+          {children}
+          <Footer />
+        </>
+      )}
     </>
-  )
-}
+  );
+};
 
-export default layout
+export default Layout;
