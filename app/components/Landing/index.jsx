@@ -7,7 +7,6 @@ import { ScrollTrigger } from 'gsap/all'
 import { slideUp } from './animation'
 import { motion } from 'framer-motion'
 
-
 export default function Home() {
   const firstText = useRef(null)
   const secondText = useRef(null)
@@ -43,23 +42,15 @@ export default function Home() {
   }
 
   return (
-   <>
-   
-
-   
-   
-   <motion.main
+    <motion.main
       variants={slideUp}
       initial="initial"
       animate="enter"
-      className="relative flex h-screen bg-[#B3B3B3] overflow-hidden"
+      className="relative w-screen flex h-screen bg-[#B3B3B3] overflow-x-hidden"
     >
-     
-     
-
       {/* Slider Text */}
-      <div className="absolute top-[calc(100vh-350px)]">
-        <div ref={slider} className="relative whitespace-nowrap">
+      <div className="absolute top-[calc(100vh-350px)] w-screen overflow-hidden">
+        <div ref={slider} className="relative whitespace-nowrap w-max">
           <p
             ref={firstText}
             className="relative m-0 text-white text-[230px] font-medium pr-[50px]"
@@ -98,12 +89,5 @@ export default function Home() {
         <p className="m-0 mb-[10px]">Designer & Developer</p>
       </div>
     </motion.main>
-   
-   
-   
-   
-   
-   
-   </>
   )
 }

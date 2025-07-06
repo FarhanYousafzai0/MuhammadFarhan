@@ -15,8 +15,8 @@ const Page = () => {
       <Header theme="light" /> 
       <Home />
 <Services/>
-      <Proejects />
-      <SliderImages />
+      {/* <Proejects />
+      <SliderImages /> */}
      
     </>
   )
