@@ -4,7 +4,7 @@ import Lenis from 'lenis';
 import React, { useEffect, useState } from 'react';
 import { Footer } from '../components/Footer';
 import Preloader from '../components/PreLoader';
-
+import './App.css'
 const Layout = ({ children }) => {
   const [showLoader, setShowLoader] = useState(true);
 

@@ -12,9 +12,10 @@ import { SpinnerDotted } from "spinners-react";
 export const Page = () => {
   return (
     <>
-    <Header/>
+
       
-      <div className="w-screen text-white">
+      <div className="w-screen overflow-x-hidden text-white">
+      <Header/>
         <div className="md:w-[80%] w-[90%] py-30 mx-auto h-full">
           <span className="md:text-7xl max-w-sm text-5xl text-black font-normal">
             Helping clients thrive <br />

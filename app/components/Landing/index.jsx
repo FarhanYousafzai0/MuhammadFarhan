@@ -7,6 +7,7 @@ import { ScrollTrigger } from 'gsap/all'
 import { slideUp } from './animation'
 import { motion } from 'framer-motion'
 
+import Header from '../Header'
 export default function Home() {
   const firstText = useRef(null)
   const secondText = useRef(null)
@@ -48,6 +49,9 @@ export default function Home() {
       animate="enter"
       className="relative w-screen flex h-screen bg-[#B3B3B3] overflow-x-hidden"
     >
+
+
+       <Header theme="light" /> 
       {/* Slider Text */}
       <div className="absolute top-[calc(100vh-350px)] w-screen overflow-hidden">
         <div ref={slider} className="relative whitespace-nowrap w-max">

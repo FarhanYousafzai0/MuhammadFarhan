@@ -66,7 +66,7 @@ const page = () => {
     
 
     
-    <div className="w-screen min-h-screen bg-white text-black">
+    <div className="w-screen overflow-x-hidden min-h-screen bg-white text-black">
       <Header/>
       {/* Top Heading */}
       <div className="md:w-[80%] w-[90%] py-30 mx-auto">

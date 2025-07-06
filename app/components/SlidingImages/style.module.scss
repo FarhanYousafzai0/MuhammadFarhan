@@ -1,6 +1,7 @@
 .slidingImages{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden !important;
     gap: 3vw;
     position: relative;
     margin-top: 100px;

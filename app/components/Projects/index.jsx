@@ -88,7 +88,7 @@ export default function Home() {
   return (
     <main
       onMouseMove={(e) => moveItems(e.clientX, e.clientY)}
-      className="flex flex-col items-center mt-[100px]  px-4 md:px-16 lg:px-[200px] relative"
+      className="flex overflow-hidden flex-col w-screen items-center mt-[100px]  px-4 md:px-16 lg:px-[200px] relative"
     >
       {/* Project List */}
       <div className="w-full max-w-[1400px] flex flex-col items-center justify-center mb-[100px]">

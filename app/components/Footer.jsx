@@ -44,7 +44,7 @@ export const Footer = () => {
   return (
     <>
     
-    <div className='w-screen   bg-[#1C1D20]'>
+    <div className='w-screen overflow-x-hidden   bg-[#1C1D20]'>
 
 
 

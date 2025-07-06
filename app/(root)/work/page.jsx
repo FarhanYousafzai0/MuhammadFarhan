@@ -17,8 +17,9 @@ const Page = () => {
 
   return (
     <>
+     
+      <div className="w-screen overflow-x-hid min-h-screen bg-white text-black">
       <Header/>
-      <div className="w-screen min-h-screen bg-white text-black">
         <div className="md:w-[80%] w-[90%] py-30 mx-auto">
           <span className="md:text-6xl text-5xl font-normal leading-tight">
             Creating next level <br /> digital products
