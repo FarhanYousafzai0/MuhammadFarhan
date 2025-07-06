@@ -1,7 +1,7 @@
 "use client";
 
 import Magnetic from "@/app/components/Magnetic";
-import Nav2 from "@/app/components/Nav2";
+import Header from "@/app/components/Header2";
 import { projectsData } from "@/app/data";
 import React, { useState } from "react";
 
@@ -17,9 +17,9 @@ const Page = () => {
 
   return (
     <>
-      <Nav2 />
+      <Header/>
       <div className="w-screen min-h-screen bg-white text-black">
-        <div className="md:w-[80%] w-[90%] py-10 mx-auto">
+        <div className="md:w-[80%] w-[90%] py-30 mx-auto">
           <span className="md:text-6xl text-5xl font-normal leading-tight">
             Creating next level <br /> digital products
           </span>

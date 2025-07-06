@@ -1,6 +1,7 @@
 "use client";
+
 import Magnetic from "@/app/components/Magnetic";
-import Nav2 from "@/app/components/Nav2";
+import Header from "@/app/components/Header2";
 import Link from "next/link";
 import React, { useState } from "react";
 import { SpinnerDotted } from "spinners-react";
@@ -63,11 +64,12 @@ const page = () => {
     
     
     
-    <Nav2/>
+
     
     <div className="w-screen min-h-screen bg-white text-black">
+      <Header/>
       {/* Top Heading */}
-      <div className="md:w-[80%] w-[90%] py-10 mx-auto">
+      <div className="md:w-[80%] w-[90%] py-30 mx-auto">
         <span className="md:text-6xl text-4xl font-normal ">
           Let's build something <br /> great together.
         </span>

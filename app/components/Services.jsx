@@ -34,10 +34,10 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="w-screen h-screen bg-[#f1f1f1] p-5 md:p-20">
+    <div className="w-screen h-auto bg-[#f1f1f1] p-5 md:p-20">
       <div className="w-full h-full flex md:flex-row flex-col gap-5">
         {/* Left animated text */}
-        <div className="w-full h-full">
+        <div className="w-full md:h-full">
           <p
             ref={textRef}
             className="text-neutral-800 md:text-3xl text-2xl max-w-md service-text "
@@ -49,7 +49,7 @@ const Services = () => {
         </div>
 
         {/* Right content */}
-        <div className="flex flex-col gap-10 md:items-center w-full h-full">
+        <div className="flex flex-col gap-10 md:items-center w-full md:h-full">
           <p className="text-black max-w-xs md:ml-20 leading-6">
             The combination of my passion for design, code & interaction
             positions me in a unique place in the web design world.

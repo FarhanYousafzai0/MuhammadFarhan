@@ -1,26 +1,25 @@
 "use client"
 
 import React from 'react'
-import { Hero } from '../components/Hero'
 import Services from '../components/Services'
 import { Footer } from '../components/Footer'
-import Nav from '../components/Nav'
+import Home from '../components/Landing'
+import Proejects from '../components/Projects'
+import SliderImages from '../components/SlidingImages'
 
+import Header from '../components/Header' 
 
-
-
-const page = () => {
+const Page = () => {
   return (
     <>
-
-
-  <Hero/>
-<Services/>
-
-
-    
+      <Header theme="light" /> 
+      <Home />
+      <Services />
+      <Proejects />
+      <SliderImages />
+     
     </>
   )
 }
 
-export default page
+export default Page

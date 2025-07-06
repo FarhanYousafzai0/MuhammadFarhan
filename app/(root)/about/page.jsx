@@ -1,10 +1,10 @@
 "use client";
 
-import Nav2 from "@/app/components/Nav2";
+
 import SpotlightCard from "@/app/components/ui/Components/SpotlightCard/SpotlightCard";
 import CircularText from "@/app/components/ui/TextAnimations/CircularText/CircularText";
 import { Experience } from "@/app/data";
-
+import Header from "@/app/components/Header2";
 
 import React from "react";
 import { SpinnerDotted } from "spinners-react";
@@ -12,9 +12,10 @@ import { SpinnerDotted } from "spinners-react";
 export const Page = () => {
   return (
     <>
-      <Nav2 />
+    <Header/>
+      
       <div className="w-screen text-white">
-        <div className="md:w-[80%] w-[90%] py-10 mx-auto h-full">
+        <div className="md:w-[80%] w-[90%] py-30 mx-auto h-full">
           <span className="md:text-7xl max-w-sm text-5xl text-black font-normal">
             Helping clients thrive <br />
             in the digital world
