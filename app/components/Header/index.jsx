@@ -49,15 +49,19 @@ export default function Header() {
 
   return (
     <>
-      <div ref={header} className={styles.header}>
-        <div className={styles.logo}>
-          <p className={styles.copyright}>©</p>
-          <div className={styles.name}>
-            <p className={styles.codeBy}>Code by</p>
-            <p className={styles.dennis}>Farhan</p>
-            <p className={styles.snellenberg}>Yousafzai</p>
-          </div>
-        </div>
+   
+     <div ref={header} className={styles.header}>
+     <Link href="/" passHref legacyBehavior>
+  <a className={styles.logo}>
+    <p className={styles.copyright}>©</p>
+    <div className={styles.name}>
+      <p className={styles.codeBy}>Code by</p>
+      <p className={styles.dennis}>Farhan</p>
+      <p className={styles.snellenberg}>Yousafzai</p>
+    </div>
+  </a>
+</Link>
+   
 
         <div className={styles.nav}>
           <Magnetic>

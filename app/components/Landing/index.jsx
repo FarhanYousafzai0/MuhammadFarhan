@@ -55,12 +55,7 @@ export default function Home() {
       className="relative flex h-screen bg-[#B3B3B3] overflow-hidden"
     >
      
-      <Image
-        src=""
-        fill={true}
-        alt="background"
-        className="object-cover"
-      />
+     
 
       {/* Slider Text */}
       <div className="absolute top-[calc(100vh-350px)]">
@@ -84,7 +79,7 @@ export default function Home() {
       <div
         data-scroll
         data-scroll-speed={0.1}
-        className="absolute top-[35%] left-[65%] text-white text-[24px] font-light"
+        className="absolute top-[20%] left-[65%] text-white text-[24px] font-light"
       >
         <svg
           width="9"

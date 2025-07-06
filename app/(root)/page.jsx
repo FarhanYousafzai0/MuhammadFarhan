@@ -14,7 +14,7 @@ const Page = () => {
     <>
       <Header theme="light" /> 
       <Home />
-      <Services />
+<Services/>
       <Proejects />
       <SliderImages />
      

@@ -100,8 +100,8 @@
         cursor: pointer;
       }
     }
-  
-    // ❌ Hide only nav links on mobile
+ 
+    
     @media (max-width: 768px) {
       .nav {
         display: none;
