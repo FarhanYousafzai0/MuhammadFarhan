@@ -31,7 +31,7 @@ export default function SlidingImages() {
   return (
     <div
       ref={container}
-      className="flex flex-col overflow-hidden gap-[3vw] w-screen relative mt-[100px] bg-white z-[1]"
+      className="flex flex-col justify-center overflow-hidden gap-[3vw]  w-screen relative mt-[100px] z-[1]"
     >
       <motion.div
         style={{ x: x1 }}

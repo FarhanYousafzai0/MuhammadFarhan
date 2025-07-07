@@ -90,6 +90,8 @@ export default function Home() {
       onMouseMove={(e) => moveItems(e.clientX, e.clientY)}
       className="flex overflow-hidden flex-col w-screen items-center mt-[100px]  px-4 md:px-16 lg:px-[200px] relative"
     >
+
+      <span className='text-xm text-black py-6'>Recent Work</span>
       {/* Project List */}
       <div className="w-full max-w-[1400px] flex flex-col items-center justify-center mb-[100px]">
         {projects.map((project, index) => (
