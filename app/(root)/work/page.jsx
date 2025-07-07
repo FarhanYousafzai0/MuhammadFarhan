@@ -46,15 +46,30 @@ const Page = () => {
           {/* Filtered Projects */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
             {FilterProjects.map((project, index) => (
-              <div
-                key={index}
-                className="border rounded-xl p-6 shadow-md hover:shadow-lg transition"
-              >
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-sm text-neutral-600">
-                  {project.description}
-                </p>
-              </div>
+           <div
+           key={index}
+           className="rounded-xl shadow-xl bg-white overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl"
+         >
+           {/* Top Image */}
+           <div className="m-4 rounded-lg overflow-hidden">
+             <img
+               src={project.src}
+               alt={project.title}
+               className="object-cover w-full h-60 rounded-lg"
+             />
+           </div>
+         
+           {/* Content */}
+           <div className="px-6 pb-6">
+             <span className="text-xs uppercase tracking-wide text-gray-500">
+               {project.category}
+             </span>
+         
+             <h2 className="text-xl font-semibold text-black mt-2">{project.title}</h2>
+             <p className="text-sm text-gray-600 mt-1">{project.description}</p>
+           </div>
+         </div>
+         
             ))}
           </div>
         </div>

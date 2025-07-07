@@ -15,15 +15,15 @@ const Services = () => {
 
   useEffect(() => {
     const split = new SplitText(textRef.current, {
-      type: "lines",
-      linesClass: "line",
+      type: "chars",
+      linesClass: "chars",
     });
 
-    gsap.from(split.lines, {
-      y: 40,
+    gsap.from(split.chars, {
+    
       opacity: 0,
-      duration: 1,
-      stagger: 0.2,
+      duration: 3,
+      stagger: 0.5,
       ease: "power2.out",
       scrollTrigger: {
         trigger: textRef.current,

@@ -1,3 +1,5 @@
+
+
 export const navItems = [
 
     {
@@ -76,25 +78,105 @@ import {
   // components/Data.js
 
 export const projectsData = [
+
+  {
+    title: "NextIdea",
+    category: "development",
+    description: "Mern Stack Project",
+    src:'/Projects/Nextidea.jpg',
+    link:''
+  },
+
+  {
+    title: "PNY",
+    category: "development",
+    description: "Learning Managment System",
+    src:'/Projects/Pny.jpg',
+    link:''
+  },
+  {
+    title: "Ochi",
+    category: "design",
+    description: "Awards Winning Website",
+    src:'/Projects/Ochi.jpg',
+    link:''
+  },
+  {
+    title: "Redfine",
+    category: "desgin",
+    description: "Figma to React",
+    src:'/Projects/Redfine.jpg',
+    link:''
+  },
     {
-      title: "Creative Landing Page",
+      title: "Cooktaileque",
       category: "design",
       description: "Figma to frontend, modern layout.",
+      src:'/Projects/cooktailique.jpg',
+      link:''
     },
     {
-      title: "Full Stack E-Commerce",
+      title: "Iphone",
+      category: "design",
+      description: "Interaction & Development",
+      src:'/Projects/IPone.jpg',
+      link:''
+    },
+    {
+      title: "Trim Link",
       category: "development",
       description: "React + Node + MongoDB, complete site.",
+      src:'/Projects/TrimLink.jpg',
+      link:''
     },
     {
-      title: "Portfolio UI Concept",
-      category: "design",
-      description: "High-fidelity Figma concept.",
+      title: "Artify.ai",
+      category: "development",
+      description: "Image Generation App",
+      src:'/Projects/Artify.ai.jpg',
+      link:''
     },
     {
       title: "Chat App with Socket.IO",
       category: "development",
       description: "Real-time MERN chat application.",
+      src:'/Projects/Chattingapp.jpg'
     },
+    {
+      title: "Rejouice",
+      category: "design",
+      description: "Interaction & Figma Design",
+      src:'/Projects/Rejouice.jpg',
+      link:''
+    },
+    {
+      title: "Soical Nest",
+      category: "development",
+      description: "Soical Media App",
+      src:'/Projects/SocialNest.jpg',
+      link:''
+    },
+    {
+      title: "Beatkit",
+      category: "desgin",
+      description: "Figma Desgin",
+      src:'/Projects/Beatkit.jpg',
+      link:''
+    },
+    {
+      title: "Maven",
+      category: "desgin",
+      description: "Award Winning Website",
+      src:'/images/maven.jpg',
+      link:''
+    },
+    {
+      title: "DashPilot",
+      category: "development",
+      description: "Full Stack Project",
+      src:'/Projects/Dashpiolet.jpg',
+      link:''
+    },
+   
   ];
   
