@@ -102,7 +102,7 @@ export const projectsData = [
     link:''
   },
   {
-    title: "Redfine", J=
+    title: "Redfine", 
     category: "desgin",
     description: "Figma to React",
     src:'/Projects/Redfine.jpg',
