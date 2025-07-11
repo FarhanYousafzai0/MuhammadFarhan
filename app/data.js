@@ -102,7 +102,7 @@ export const projectsData = [
     link:''
   },
   {
-    title: "Redfine",
+    title: "Redfine", J=
     category: "desgin",
     description: "Figma to React",
     src:'/Projects/Redfine.jpg',
@@ -175,6 +175,13 @@ export const projectsData = [
       category: "development",
       description: "Full Stack Project",
       src:'/Projects/Dashpiolet.jpg',
+      link:''
+    },
+    {
+      title: "AbdullahLinkedinWala",
+      category: "design",
+      description: "Landing Page for his agency.",
+      src:'/Projects/AB.jpg',
       link:''
     },
    
