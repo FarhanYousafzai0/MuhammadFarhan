@@ -1,10 +1,12 @@
+import { opacity } from "../Preloader/anim";
+
 export const slideUp = {
     initial: {
-        y: 300
+        opacity:0
     },
     enter: {
-        y: 0,
+      opacity:1
         
-        transition: {duration: 0.6, ease: [0.42, 0, 1, 1] , }
+       
     }
 }

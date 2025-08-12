@@ -6,6 +6,7 @@ import { Footer } from '../components/Footer'
 import Home from '../components/Landing'
 import Proejects from '../components/Projects'
 import SliderImages from '../components/SlidingImages'
+import ResumeSection from '../components/ResumeSection'
 
 
 const Page = () => {
@@ -19,7 +20,7 @@ const Page = () => {
 <Services/>
       <Proejects />
       <SliderImages /> 
-
+ <ResumeSection/>
      
     </>
   )
