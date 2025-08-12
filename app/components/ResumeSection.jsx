@@ -74,7 +74,7 @@ export default function ResumeSection() {
 
           {/* Magnetic Download Button */}
          <div className="pt-4">
-  <btutton
+ <a href="/My Professioanl Resume..pdf" download="Muhammad Farhan"> <btutton
    
     download
     ref={buttonRef}
@@ -85,7 +85,8 @@ export default function ResumeSection() {
       <Download className="w-5 h-5" />
       Download Resume
     </span>
-  </btutton>
+  </btutton></a>
+
   <p className="mt-4 text-sm text-gray-600">
     PDF • Updated: August 2025
   </p>
@@ -95,7 +96,7 @@ export default function ResumeSection() {
         {/* Right Preview */}
         <div className="resume-preview hidden md:block relative">
           <div className="relative w-full h-96 bg-white rounded-2xl shadow-2xl overflow-hidden border-8 border-white">
-            <div className="absolute inset-0 bg-gradient-to-br from-orange-200 to-orange-200 opacity-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-orange-200 to-orange- opacity-10"></div>
             <div className="absolute top-4 left-4 right-4 flex gap-2">
               <div className="w-3 h-3 rounded-full bg-red-500"></div>
               <div className="w-3 h-3 rounded-full bg-yellow-500"></div>

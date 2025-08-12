@@ -1,3 +1,5 @@
+'main' // <-- This line appears to be a typo, should be removed
+
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
@@ -88,11 +90,19 @@ export default function Home() {
   return (
     <main
       onMouseMove={(e) => moveItems(e.clientX, e.clientY)}
-      className="flex overflow-hidden flex-col w-screen items-center mt-[100px]  px-4 md:px-16 lg:px-[200px] relative"
+      className="flex overflow-hidden flex-col w-screen items-center mt-[100px] px-4 md:px-16 lg:px-[200px] relative"
     >
+      {/* Improved Heading Section */}
+      <div className="w-full max-w-[1400px] text-center mb-12">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-2">
+          Recent Work
+        </h2>
+        <p className="text-gray-600 text-lg">
+          Explore my latest projects and creative work
+        </p>
+      </div>
 
-      <span className='text-xm text-black py-6'>Recent Work</span>
-      {/* Project List */}
+      {/* Project List - unchanged */}
       <div className="w-full max-w-[1400px] flex flex-col items-center justify-center mb-[100px]">
         {projects.map((project, index) => (
           <Project
@@ -104,7 +114,7 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Modal Preview */}
+      {/* Modal Preview - unchanged */}
       <>
         <motion.div
           ref={modalContainer}
@@ -135,7 +145,7 @@ export default function Home() {
           </div>
         </motion.div>
 
-        {/* Cursor */}
+        {/* Cursor - unchanged */}
         <motion.div
           ref={cursor}
           variants={scaleAnimation}
@@ -143,7 +153,7 @@ export default function Home() {
           animate={active ? 'enter' : 'closed'}
           className="fixed z-[3] w-[80px] h-[80px] rounded-full bg-[#455CE9] text-white flex items-center justify-center text-[14px] font-light pointer-events-none"
         />
-        {/* Cursor Label */}
+        {/* Cursor Label - unchanged */}
         <motion.div
           ref={cursorLabel}
           variants={scaleAnimation}
