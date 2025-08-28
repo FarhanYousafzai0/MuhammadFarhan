@@ -71,6 +71,12 @@ import {
       description: "Complete end-to-end solutions — from frontend design to backend logic and APIs.",
       icon: Layers,
     },
+
+    {
+      title: "Workflow Automation",
+      description: "Build smart automations that connect your apps and services — from simple triggers to advanced multi-step workflows.",
+      icon: Layers,
+    },
   ];
   
 

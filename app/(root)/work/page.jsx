@@ -5,7 +5,7 @@ import Header from "@/app/components/Header2";
 import { projectsData } from "@/app/data";
 import React, { useState } from "react";
 
-const categories = ["all", "design", "development"];
+const categories = ["all", "design", "development","automations"];
 
 const Page = () => {
   const [SelectedCategory, setSelectedCategory] = useState("all");
@@ -31,7 +31,7 @@ const Page = () => {
               <Magnetic key={cat}>
                 <button
                   onClick={() => setSelectedCategory(cat)}
-                  className={`px-5 md:px-10 py-3 md:py-5 cursor-pointer transition-colors duration-300 rounded-full border ${
+                  className={`px-5 md:px-10 py-3 md:py-4 cursor-pointer transition-colors duration-300 rounded-full border ${
                     SelectedCategory === cat
                       ? "bg-black text-white"
                       : "border-neutral-500 text-black"
