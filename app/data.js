@@ -190,6 +190,43 @@ export const projectsData = [
       src:'/Projects/AB.jpg',
       link:''
     },
+
+    // 
+    {
+      title: "Gmail Agent Automation",
+      category: "automations",
+      description: "Automated Gmail assistant that reads, categorizes, and responds to emails using AI. Integrates with Google APIs for seamless workflow automation.",
+      src: "/Projects/gmail_agent.png",
+      link: ""
+    },
+    {
+      title: "Multi-Agent Newsletter System",
+      category: "automations",
+      description: "A system that uses multiple AI agents to curate, generate, and send personalized newsletters. Built with n8n and Node.js for robust automation.",
+      src: "/Projects/newsletter_system.jpg",
+      link: ""
+    },
+    {
+      title: "Telegram Assistant Bot",
+      category: "automations",
+      description: "A Telegram bot that automates group management, message scheduling, and AI-powered replies. Built with Python and Telegram API.",
+      src: "/Projects/telegram_assistant.jpg",
+      link: ""
+    },
+    {
+      title: "Multi-Modal AI App (n8n & Lovable)",
+      category: "automations",
+      description: "An AI-powered app that processes text, images, and audio using n8n workflows and Lovable AI models. Automates content generation and analysis.",
+      src: "/Projects/multimodal_ai.jpg",
+      link: ""
+    },
+    {
+      title: "Auto Email Agents (DeepSeek)",
+      category: "automations",
+      description: "Automated email agents leveraging DeepSeek for intelligent email triage, summarization, and smart replies. Integrates with business workflows.",
+      src: "/Projects/auto_email_agents.jpg",
+      link: ""
+    },
    
   ];
   

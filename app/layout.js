@@ -15,7 +15,7 @@ export const metadata = {
   title: "Muhammad Farhan",
   description: "Let's Build Something.",
   icons: {
-    icon: "/33.jpeg",
+    icon: "/Pro.jpeg",
   },
 };
 
